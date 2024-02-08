@@ -1,4 +1,4 @@
-{% set version = '0.0.16' %}
+{% set version = "0.0.18" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,12 +10,12 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/remaCor_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/remaCor/remaCor_{{ version }}.tar.gz
-  sha256: 7897cd449e62ac1e79ed74055a077d809dd7547448afe78246fc6b3cbc90f6f7
+  sha256: 57e4ffba44392f300525b18db36a44437a6fafce38a06eff065f5482e4171631
 
 build:
-  skip: True  # [win]
-  merge_build_host: True  # [win]
-  number: 1
+  skip: true  # [win]
+  merge_build_host: true  # [win]
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
@@ -62,13 +62,8 @@ test:
 about:
   home: https://diseaseneurogenomics.github.io/remaCor/
   license: Artistic-2.0
-  summary: Meta-analysis is widely used to summarize estimated effects sizes across multiple
-    statistical tests. Standard fixed and random effect meta-analysis methods assume
-    that the estimated of the effect sizes are statistically independent.  Here we relax
-    this assumption and enable meta-analysis when the correlation matrix between effect
-    size estimates is known.  Fixed effect meta-analysis uses the method of Lin and
-    Sullivan (2009) <doi:10.1016/j.ajhg.2009.11.001>, and random effects meta-analysis
-    uses the method of Han, et al. <doi:10.1093/hmg/ddw049>.
+  summary: Meta-analysis is widely used to summarize estimated effects sizes across multiple statistical tests. Standard fixed and random effect meta-analysis methods assume that the estimated of the effect sizes are statistically independent.  Here we relax this assumption and enable meta-analysis when the correlation matrix
+    between effect size estimates is known.  Fixed effect meta-analysis uses the method of Lin and Sullivan (2009) <doi:10.1016/j.ajhg.2009.11.001>, and random effects meta-analysis uses the method of Han, et al. <doi:10.1093/hmg/ddw049>.
   license_family: OTHER
   license_file:
     - '{{ environ["PREFIX"] }}/lib/R/share/licenses/Artistic-2.0'
