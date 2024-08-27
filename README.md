@@ -13,6 +13,8 @@ Package license: Artistic-2.0
 
 Summary: Meta-analysis is widely used to summarize estimated effects sizes across multiple statistical tests. Standard fixed and random effect meta-analysis methods assume that the estimated of the effect sizes are statistically independent.  Here we relax this assumption and enable meta-analysis when the correlation matrix between effect size estimates is known.  Fixed effect meta-analysis uses the method of Lin and Sullivan (2009) <doi:10.1016/j.ajhg.2009.11.001>, and random effects meta-analysis uses the method of Han, et al. <doi:10.1093/hmg/ddw049>.
 
+Development: https://github.com/DiseaseNeurogenomics/remaCor/
+
 About r-remacor
 ---------------
 
@@ -21,6 +23,8 @@ Home: https://diseaseneurogenomics.github.io/remaCor/
 Package license: Artistic-2.0
 
 Summary: Meta-analysis is widely used to summarize estimated effects sizes across multiple statistical tests. Standard fixed and random effect meta-analysis methods assume that the estimated of the effect sizes are statistically independent.  Here we relax this assumption and enable meta-analysis when the correlation matrix between effect size estimates is known.  Fixed effect meta-analysis uses the method of Lin and Sullivan (2009) <doi:10.1016/j.ajhg.2009.11.001>, and random effects meta-analysis uses the method of Han, et al. <doi:10.1093/hmg/ddw049>.
+
+Development: https://github.com/DiseaseNeurogenomics/remaCor/
 
 Current build status
 ====================
