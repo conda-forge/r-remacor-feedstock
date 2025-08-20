@@ -1,4 +1,4 @@
-{% set version = "0.0.18" %}
+{% set version = "0.0.20" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/remaCor_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/remaCor/remaCor_{{ version }}.tar.gz
-  sha256: 57e4ffba44392f300525b18db36a44437a6fafce38a06eff065f5482e4171631
+  sha256: 8c68ae044117cc72172389ee8ece8487f4e81861e99fe458bd6218db948f539f
 
 build:
-  number: 2
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
